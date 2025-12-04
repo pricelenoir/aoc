@@ -1,0 +1,27 @@
+#include <string>
+#include "../../util/registry.hpp"
+#include "../../util/util.hpp"
+
+// ---- Day-specific solutions ----
+
+std::string solvePart1(const std::string& input) {
+    // TODO: implement Part 1
+    (void)input;
+    return "UNIMPLEMENTED";
+}
+
+std::string solvePart2(const std::string& input) {
+    // TODO: implement Part 2
+    (void)input;
+    return "UNIMPLEMENTED";
+}
+
+// ---- Auto-registration ----
+
+struct AutoRegister{{YEAR}}Day{{DAY}} {
+    AutoRegister{{YEAR}}Day{{DAY}}() {
+        registerSolution({{YEAR}}, {{DAY}}, solvePart1, solvePart2);
+    }
+};
+
+static AutoRegister{{YEAR}}Day{{DAY}} regInstance;
