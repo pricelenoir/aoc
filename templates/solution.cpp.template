@@ -1,16 +1,17 @@
 #include <string>
 #include "../../util/registry.hpp"
 #include "../../util/util.hpp"
+using namespace std;
 
 // ---- Day-specific solutions ----
 
-std::string solvePart1(const std::string& input) {
+string solvePart1(const string& input) {
     // TODO: implement Part 1
     (void)input;
     return "UNIMPLEMENTED";
 }
 
-std::string solvePart2(const std::string& input) {
+string solvePart2(const string& input) {
     // TODO: implement Part 2
     (void)input;
     return "UNIMPLEMENTED";
