@@ -5,7 +5,7 @@ using namespace std;
 
 // ---- Day-specific solutions ----
 
-string solvePart1(const string& input) {
+static string solvePart1(const string& input) {
     vector<string> inputVec = util::splitLines(input);
 
     int position = 50, direction = 0, rotation = 0, solution = 0;
@@ -19,7 +19,7 @@ string solvePart1(const string& input) {
     return to_string(solution);
 }
 
-string solvePart2(const string& input) {
+static string solvePart2(const string& input) {
     vector<string> inputVec = util::splitLines(input);
     
     int position = 50, direction = 0, rotation = 0, solution = 0;

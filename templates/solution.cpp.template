@@ -5,13 +5,13 @@ using namespace std;
 
 // ---- Day-specific solutions ----
 
-string solvePart1(const string& input) {
+static string solvePart1(const string& input) {
     // TODO: implement Part 1
     (void)input;
     return "UNIMPLEMENTED";
 }
 
-string solvePart2(const string& input) {
+static string solvePart2(const string& input) {
     // TODO: implement Part 2
     (void)input;
     return "UNIMPLEMENTED";
