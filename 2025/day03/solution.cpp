@@ -20,11 +20,11 @@ static string solvePart1(const string& input) {
         // 1. Find global max
         // 2. Find local max after global max
         int idx1 = 0;
-        for (int i = 1; i < str.length()-1; i++) {
+        for (int i = 1; i < (int)str.length()-1; i++) {
             if (ctoi(str[i]) > ctoi(str[idx1])) idx1 = i;
         }
         int idx2 = idx1+1;
-        for (int i = idx2; i < str.length(); i++) {
+        for (int i = idx2; i < (int)str.length(); i++) {
             if (ctoi(str[i]) > ctoi(str[idx2])) idx2 = i;
         }
         int joltage = (ctoi(str[idx1]) * 10) + ctoi(str[idx2]);
@@ -42,7 +42,7 @@ static string solvePart2(const string& input) {
         // Greedy approach: remove digit if next digit is larger
         while(numDigitsToRemove != 0) {
             bool removed = false;
-            for (int i = 0; i < str.length() - 1; i++) {
+            for (int i = 0; i < (int)str.length() - 1; i++) {
                 if (str[i] < str[i+1]) {
                     str.erase(i, 1);
                     numDigitsToRemove--;
